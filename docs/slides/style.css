@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Impact);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+
+body { font-family: 'Roboto Slab', 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+.note-to-self{
+  background-color: #666666;
+  color:#ffffff;
+  font-family: 'Reenie Beanie';
+  font-size: 60px;
+  line-height: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; }
+
+.remark-slide-content h1 {
+  font-family: 'Reenie Beanie';
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 1em;
+}
+
+.remark-slide-content h2, h3 {
+  font-family: 'Roboto Slab';
+  font-weight: normal;
+  font-size:35px;
+}
+
+.remark-slide-content h4 {
+  font-family: 'Impact';
+  font-weight: normal;
+  font-size: 150px;
+  line-height: 1em;
+}
+
+a, a > code {
+  color: rgb(79, 128, 137);
+  text-decoration: none;
+}
+
+
+.footnote {
+  position: absolute;
+  bottom: 3em;
+  padding-right: 4em;
+  font-size: 90%;
+}
+
+.shout-out{
+  text-transform: uppercase;
+}
+
+.remark-code-line-highlighted     { background-color: #ffff88; }
+
+.remark-slide-number {
+  display:none;
+}
+
+.lefty{
+  width:75%;
+  float:left;
+}
+
+.righty{
+  width:25%;
+  float:right;
+}
+
+.inverse {
+  background-color: #A6C0C5;
+  color: #000000;
+}
+
+.highlight-box {
+  background-color: #A6C0C5;
+  width: 100%;
+  text-align: center;
+}
+
+.inverse h1 {
+  color: #ffffff;
+  font-size:75px;
+}
+
+.inverse h2, .inverse h3 {
+  color: #00000);
+}
+
+.inverse a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+img, video, iframe {
+  max-width: 100%;
+}
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}

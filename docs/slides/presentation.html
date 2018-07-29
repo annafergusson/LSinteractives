@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Large-scale interactives for large-enrolment courses</title>
+    <meta charset="utf-8">
+    <link href="libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+    <script src="libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+    <script src="libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: inverse, middle
+
+.note-to-self[
+Very drafty slides!
+]
+
+---
+class: inverse, middle
+
+# Large-scale interactives for &lt;br /&gt;large-enrolment courses
+## Anna Fergusson &lt;br /&gt;University of Auckland
+
+&lt;i class="fa fa-twitter fa-2x"&gt;&lt;/i&gt; @annafergussonnz  
+Slides available at [bit.ly/LSinteractives](http://bit.ly/LSinteractives)
+
+---
+background-image: url(opportunities.png)
+background-size: cover
+
+--
+.highlight-box[
+## Reasons why it's awesome to teach large lectures! interactive tasks on mass
+]
+
+---
+class: left, inverse
+background-image: url(fandp.jpg)
+background-size: cover
+
+.footnote[
+[Photo by Kim Carter](https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2016)
+]
+
+# Limitations
+
+---
+class: left, inverse
+background-image: url(fandp.jpg)
+background-size: cover
+
+.footnote[
+[Photo by Kim Carter](https://www.owasp.org/index.php/OWASP_New_Zealand_Day_2016)
+]
+
+# &lt;s&gt;Limitations&lt;/s&gt; Opportunities
+
+---
+class: center, middle, inverse
+  
+.shout-out[   
+#### Go big or &lt;br /&gt;go home!
+]
+
+---
+#Things that can work well with large classes
+
+--
+
+- personal response systems (clickers) 
+
+--
+
+- web surveys (google forms or similar)  
+
+--
+
+- student-instructor &amp; student-student interactions 
+
+--
+
+- phones/laptops (visualisations/applets)  
+
+--
+
+.highlight-box[
+# What happens if you put &lt;br /&gt;all these things together?
+]
+
+---
+class: inverse, middle, center
+
+.shout-out[
+####TMI&lt;sup&gt;*&lt;/sup&gt;
+]
+
+&lt;sup&gt;*&lt;/sup&gt;Too Many Interactives
+
+---
+class: middle, center
+
+Not sure how many of these interactives I will use in the talk, and whether they will be interactive in the talk.... slides that follow re: interactives explain the gist of each interactive in terms of it being a "makeover" of a pre-existing activity
+
+---
+# From weights of male students to drawings of cats
+
+Pre-existing activity involved each student shuffling cards by hand that represented students weights, finding the median weight for the re-sample, and either sending median weight back through clicker system or calling out to instructor. Neg: context first stage male weights (boring!) Pos: doing something hands-on (manually sampling with replacement)
+
+First interactive was to keep same context but do sampling http://learning.statistics-is-awesome.org/weights/cards.html 
+
+---
+
+Then, complete rewrite of activity:
+- students asked to draw a cat in under one minute
+- self-report time spent drawing using large stopwatch displayed on screen
+- all drawings of cats collected in a box from students
+- two students at front of lecture randomly sample cat drawings
+- explore two questions "What was the mean time spent drawing?" "Did most students draw face only drawings?"
+- data from random sample sent back to students to sample with replacement using app https://script.google.com/a/aucklanduni.ac.nz/macros/s/AKfycbw-JAtP3j0hlfkNGXDbAqQjygn1wNfPiu3EPofIl9YHxh-dW58/exec 
+- re-sample medians sent back to instructor using Google form https://docs.google.com/forms/d/e/1FAIpQLSdlu-mFb7oW8k-TDaZxSgqFgx_0HFpTi5IApImanle8Fm_W6w/viewform
+- re-sample medians used to show bootstrap distribution and middle 95 percentile
+
+Successes: Over 150 students participated (summer school, smaller class) but this was three times the participation of clicker questions at this stage in the course  
+Challenges: Data collected for times was less than ideal, bootstrap distribution created not the best for initial exploration
+
+---
+# From card tricks to wheel of chocolate
+
+Pre-existing activity involved using a deck of cards that was all black cards (unknown to students) and walking around the lecture theatre asking students one at a time to select a card and say what colour it was. Activity is designed to get students to use inituition that getting 10 black cards would be unlikely if the pack was fair (half red, half black).
+
+Pos: Students seem to enjoy the activity... but
+Neg: Only 10 students participate, and they quickly get the gist of it
+
+Rewrite: involve all the students in something where they could win chocolate (seems to be a good motivator)
+
+---
+- students are shown a spinner on the screen that is half blue and half silver
+- everyone stands up and chooses a colour
+- spin the spinner and if your colour comes up, you get to stay standing
+- repeat until one (or more depending on how much chocolate you have) person is still standing
+
+The spinner is biased (80% for blue) but lands in random positions so students don't really start to question the fairness until much later than the card trick activity. And they have an investment in arguing why it was unfair because they miss out on chocolate.
+
+After the spins, and the winners get chocolate, students asked to discuss how they would argue the spinner is not fair. Then students flip a coin six times (or however many rounds were done) using Siri, real coins, online apps and return number of heads back through clickers/google form. This data is used to strengthen their intuitive argument about the spinner being biased.
+
+---
+# From caffeine to legal phone tapping
+
+Pre-existing task for randomisation test starts with a study exploring effect of caffeine on stimulation, using finger tapping as response variable. But the randomisation variation task that preceeds this does not use data from a similar context (foot length of students). 
+
+Tweet from Donald Trump provided the hook for a legal phone tapping task. Allow students to get some ideas around how finger tapping as a variable might be measured, but also the underlying important idea of chance acting alone.
+
+This task (the tech behind it) is more like how my interactives/apps now are developed, using Google app script to build UI and data input, and using R and apps like Shiny or my own via opencpu to access and explore data (as well as VIT online)
+---
+- Students asked to flip a coin to determine if they are in group A or B
+- Students sent to app which gives instructions and then collects data from them (1) taps made during one minute (2) device type
+- data is used to create box/dot plots of number of taps made, compare by group A and B
+- students asked to flip a coin again, resend their tap data through with new group (A or B)
+- visual is updated to show another version of A vs B comparison
+- repeat again to build idea that the group they were allocated to was just by chance, and the differences between the group medians is also (in this case with no treatment) just by chance
+- data is then sent back to students via the VIT online app, work through using the randomisation variation module together
+- clicker question used to check understanding of what are likely or unlikely differences between group medians just by chance
+
+Added bonus for this data is also to explore how the rate of tapping changes over the minute, by overlaying each "players" data on a time series plot, using R and functions from the dplyr and ggplot packages. Also, comparing these rates by device type, all through a simple code interface students can play around with on their phones/devices.
+
+---
+# What helps make these interactives successful?
+
+- use of a link sharing system like my slinky app
+- using a modular approach rather than a "one stop shop" e.g. data input/UI through Google web app, saving Google sheet backend, flexibility to use a variety of tools to work with data
+- apps that accept public csv links as part of the URL
+
+Yes, programming skills help but you could start with google forms (quick demo of general knowledge quiz) or use shiny apps (quick demo of nick strayers shinysense package/wand magic)
+
+In developing interactives, don't hide too many things away behind the scenes, consider how to make quick transitions between phases and have backups if things go wrong
+
+---
+class: left, top
+
+# Emerging framework for large-scale interactives
+
+Each interactive involves all of these things in no particular order and often more than once:
+- predict something
+- do something
+- discuss something
+- answer something
+
+Underlying idea is that the interactives drive the learning conversations, rather than being one-off "events" interdispersed between "lecturing"
+
+The "inter" of interactive is as much about student-to-student and student-to-instructor interaction as it is about student-to-device interaction
+
+---
+class: left, middle, inverse
+
+# Nga mihi
+## Anna Fergusson &lt;br /&gt;University of Auckland
+
+&lt;i class="fa fa-twitter fa-2x"&gt;&lt;/i&gt; @annafergussonnz  
+Slides available at [bit.ly/LSinteractives](http://bit.ly/LSinteractives)  
+Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
