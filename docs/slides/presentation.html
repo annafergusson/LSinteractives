@@ -12,13 +12,7 @@
     <textarea id="source">
 
 
-class: inverse, middle
 
-.note-to-self[
-Very drafty slides!
-]
-
----
 class: inverse, middle
 
 # Large-scale interactives for &lt;br /&gt;large-enrolment courses
@@ -66,7 +60,11 @@ class: center, middle, inverse
 ]
 
 ---
-#Things that can work well with large classes
+#Things that can work well with large classes&lt;sup&gt;*&lt;/sup&gt;
+
+.footnote[
+&lt;sup&gt;*&lt;/sup&gt; See the [GAISE College Report 2016](http://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf)
+]
 
 --
 
@@ -102,105 +100,225 @@ class: inverse, middle, center
 ---
 class: middle, center
 
-Not sure how many of these interactives I will use in the talk, and whether they will be interactive in the talk.... slides that follow re: interactives explain the gist of each interactive in terms of it being a "makeover" of a pre-existing activity
+## So I'll focus on &lt;s&gt;some&lt;/s&gt; one large-scale interactive&lt;s&gt;s&lt;/s&gt; designed to support simulation-based inference
 
 ---
-# From weights of male students to drawings of cats
+#Does caffeine have a stimulus effect?
 
-Pre-existing activity involved each student shuffling cards by hand that represented students weights, finding the median weight for the re-sample, and either sending median weight back through clicker system or calling out to instructor. Neg: context first stage male weights (boring!) Pos: doing something hands-on (manually sampling with replacement)
+&lt;img src="caffeine.PNG" height=300 /&gt;
 
-First interactive was to keep same context but do sampling http://learning.statistics-is-awesome.org/weights/cards.html 
+.footnote[
+Modified from Watkins, A., Scheaffer, R. &amp; Cobb, R. (2010). *Statistics From Data to Decision*, (2nd ed.). Wiley. 
+]
+
+---
+class: middle, center
+background-image: url(trump.PNG)
+
+---
+class: inverse, middle, center
+
+# Legal phone tapping
+
+---
+class: middle, center
+
+![](slinky2.png)
+
+## [bit.ly/slinkyapp](http://bit.ly/slinkyapp)
+
+---
+# Flip a "coin"
+
+## heads = group A
+
+## tails = group B
+
+---
+class: center, middle
+
+![](slinky2.png)
+
+## check slinky, read the instructions, wait
+
+---
+class: center, middle
+
+&lt;video height="400" controls&gt;
+  &lt;source src="tappy.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+---
+.pull-left[
+
+## Publish a google sheet as a csv file
+
+![](publish.PNG)
+]
+
+.pull-right[
+
+## Use link within iNZight lite
+
+![](iNZight.PNG)
+]
+---
+
+&lt;iframe src="https://script.google.com/macros/s/AKfycbxmF8JL-9R_viZolgV0e2TTUI2vsSER8Uwx7jyZHIt6eA3T5NWR/exec?page=code1" width="100%" height="100%" frameborder="0"&gt;&lt;/iframe&gt;
 
 ---
 
-Then, complete rewrite of activity:
-- students asked to draw a cat in under one minute
-- self-report time spent drawing using large stopwatch displayed on screen
-- all drawings of cats collected in a box from students
-- two students at front of lecture randomly sample cat drawings
-- explore two questions "What was the mean time spent drawing?" "Did most students draw face only drawings?"
-- data from random sample sent back to students to sample with replacement using app https://script.google.com/a/aucklanduni.ac.nz/macros/s/AKfycbw-JAtP3j0hlfkNGXDbAqQjygn1wNfPiu3EPofIl9YHxh-dW58/exec 
-- re-sample medians sent back to instructor using Google form https://docs.google.com/forms/d/e/1FAIpQLSdlu-mFb7oW8k-TDaZxSgqFgx_0HFpTi5IApImanle8Fm_W6w/viewform
-- re-sample medians used to show bootstrap distribution and middle 95 percentile
-
-Successes: Over 150 students participated (summer school, smaller class) but this was three times the participation of clicker questions at this stage in the course  
-Challenges: Data collected for times was less than ideal, bootstrap distribution created not the best for initial exploration
+&lt;iframe src="https://script.google.com/macros/s/AKfycbxmF8JL-9R_viZolgV0e2TTUI2vsSER8Uwx7jyZHIt6eA3T5NWR/exec?page=code2" width="100%" height="100%" frameborder="0"&gt;&lt;/iframe&gt;
 
 ---
-# From card tricks to wheel of chocolate
+class: middle, center, inverse
 
-Pre-existing activity involved using a deck of cards that was all black cards (unknown to students) and walking around the lecture theatre asking students one at a time to select a card and say what colour it was. Activity is designed to get students to use inituition that getting 10 black cards would be unlikely if the pack was fair (half red, half black).
+&lt;img src="nullabor.png" width=300 /&gt;
 
-Pos: Students seem to enjoy the activity... but
-Neg: Only 10 students participate, and they quickly get the gist of it
+## visual inference using the lineup protocol
 
-Rewrite: involve all the students in something where they could win chocolate (seems to be a good motivator)
+Hadley Wickham, Niladri Roy Chowdhury and Di Cook (2014). nullabor: Tools for Graphical Inference. R package version 0.3.1. https://CRAN.R-project.org/package=nullabor
 
----
-- students are shown a spinner on the screen that is half blue and half silver
-- everyone stands up and chooses a colour
-- spin the spinner and if your colour comes up, you get to stay standing
-- repeat until one (or more depending on how much chocolate you have) person is still standing
-
-The spinner is biased (80% for blue) but lands in random positions so students don't really start to question the fairness until much later than the card trick activity. And they have an investment in arguing why it was unfair because they miss out on chocolate.
-
-After the spins, and the winners get chocolate, students asked to discuss how they would argue the spinner is not fair. Then students flip a coin six times (or however many rounds were done) using Siri, real coins, online apps and return number of heads back through clickers/google form. This data is used to strengthen their intuitive argument about the spinner being biased.
+https://cran.r-project.org/web/packages/nullabor/vignettes/nullabor.html
 
 ---
-# From caffeine to legal phone tapping
 
-Pre-existing task for randomisation test starts with a study exploring effect of caffeine on stimulation, using finger tapping as response variable. But the randomisation variation task that preceeds this does not use data from a similar context (foot length of students). 
-
-Tweet from Donald Trump provided the hook for a legal phone tapping task. Allow students to get some ideas around how finger tapping as a variable might be measured, but also the underlying important idea of chance acting alone.
-
-This task (the tech behind it) is more like how my interactives/apps now are developed, using Google app script to build UI and data input, and using R and apps like Shiny or my own via opencpu to access and explore data (as well as VIT online)
----
-- Students asked to flip a coin to determine if they are in group A or B
-- Students sent to app which gives instructions and then collects data from them (1) taps made during one minute (2) device type
-- data is used to create box/dot plots of number of taps made, compare by group A and B
-- students asked to flip a coin again, resend their tap data through with new group (A or B)
-- visual is updated to show another version of A vs B comparison
-- repeat again to build idea that the group they were allocated to was just by chance, and the differences between the group medians is also (in this case with no treatment) just by chance
-- data is then sent back to students via the VIT online app, work through using the randomisation variation module together
-- clicker question used to check understanding of what are likely or unlikely differences between group medians just by chance
-
-Added bonus for this data is also to explore how the rate of tapping changes over the minute, by overlaying each "players" data on a time series plot, using R and functions from the dplyr and ggplot packages. Also, comparing these rates by device type, all through a simple code interface students can play around with on their phones/devices.
+VIT online with link via slinky
+(if working by Wed)
 
 ---
-# What helps make these interactives successful?
+class: center, middle
 
-- use of a link sharing system like my slinky app
-- using a modular approach rather than a "one stop shop" e.g. data input/UI through Google web app, saving Google sheet backend, flexibility to use a variety of tools to work with data
-- apps that accept public csv links as part of the URL
-
-Yes, programming skills help but you could start with google forms (quick demo of general knowledge quiz) or use shiny apps (quick demo of nick strayers shinysense package/wand magic)
-
-In developing interactives, don't hide too many things away behind the scenes, consider how to make quick transitions between phases and have backups if things go wrong
+&lt;video height="400" controls&gt;
+  &lt;source src="shuffle.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
 
 ---
-class: left, top
+class: center
 
+&lt;video height="400" controls&gt;
+  &lt;source src="VIT.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+.footnote[
+See VIT (Visual Inference Tools) https://www.stat.auckland.ac.nz/~wild/VIT/downloads.html
+]
+
+---
+# What helps make large-scale interactives successful?
+
+- use of a link sharing system for quick transitions (e.g. slinky app)
+- using a modular approach rather than a "one stop shop" (e.g. data saved in Google sheet)
+- apps that accept public csv links as part of the URL (e.g. https://www.stat.auckland.ac.nz/~wild/VITonline/RandomisationVar/RVar.html?file=https://docs.google.com/spreadsheets/d/e/2PACX-1vQnyQFxXJKPECSUETE5w2zsSXDtnffapovB9Ru3XaW0h29fkOrGbZE0URZQNw4A9Ct30ZXfCiSWSexg/pub?gid=748997953&amp;single=true&amp;output=csv)
+- not hiding too many actions "behind the scenes"
+- back up plans!
+
+---
+class: middle, center, inverse
+# How to get started?
+
+---
+
+use google forms (quick demo of general knowledge quiz) 
+
+---
+
+use shiny apps (quick demo of nick strayers shinysense package/wand magic)
+
+---
+
+use no tech at all (cat drawing example)
+
+---
 # Emerging framework for large-scale interactives
 
 Each interactive involves all of these things in no particular order and often more than once:
 - predict something
 - do something
 - discuss something
-- answer something
+- answer something (to close the feedback loop)
 
-Underlying idea is that the interactives drive the learning conversations, rather than being one-off "events" interdispersed between "lecturing"
-
-The "inter" of interactive is as much about student-to-student and student-to-instructor interaction as it is about student-to-device interaction
-
+The underlying approach is that the interactives drive the learning conversations, rather than being one-off "events" interdispersed between "lecturing"
 ---
 class: left, middle, inverse
 
 # Nga mihi
+&lt;img align = "right" src="elliot.jpg" width=200 /&gt;
 ## Anna Fergusson &lt;br /&gt;University of Auckland
 
 &lt;i class="fa fa-twitter fa-2x"&gt;&lt;/i&gt; @annafergussonnz  
 Slides available at [bit.ly/LSinteractives](http://bit.ly/LSinteractives)  
 Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
+
+---
+
+---
+
+extra slides..
+
+---
+class: inverse, middle, center
+
+# The only time I use chocolate
+
+---
+
+&lt;iframe src="https://script.google.com/macros/s/AKfycbzgb7cPpLNe1RSLv1m1CLo-tQ27njM-1Iwrcn3oTWC6zqeFNvW4/exec" width="100%" height="100%" frameborder="0"&gt;&lt;/iframe&gt;
+---
+class: middle, center
+
+# Discuss: Are you convinced this spinner is fair? Why or why not?
+---
+class: middle, center
+
+![](coin.PNG)
+
+---
+class: inverse, middle, center
+
+# The truth about cats (and maybe next time dogs)
+
+---
+class: center, middle
+
+&lt;video height="400" controls&gt;
+  &lt;source src="stick.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+---
+class: center, middle
+
+&lt;video height="400" controls&gt;
+  &lt;source src="draw.mp4" type="video/mp4"&gt;
+&lt;/video
+---
+class: middle, center
+
+![](stopwatch.PNG)
+
+---
+class: middle, center
+
+# How many seconds on average did students in our lecture take to draw their cat?
+
+# Did most students in our lecture draw a head only?
+
+---
+class: center, middle
+
+&lt;video height="400" controls&gt;
+  &lt;source src="sample.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+---
+class: middle, center
+
+![](presentation_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+---
+class: middle, center
+
+![](presentation_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+---
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
