@@ -27,7 +27,7 @@ background-size: cover
 
 --
 .highlight-box[
-## Reasons why it's awesome to teach large lectures! interactive tasks on mass
+## Reasons why it's awesome to teach large lectures!
 ]
 
 ---
@@ -121,13 +121,8 @@ class: inverse, middle, center
 # Legal phone tapping
 
 ---
-class: middle, center
+class: center
 
-![](slinky2.png)
-
-## [bit.ly/slinkyapp](http://bit.ly/slinkyapp)
-
----
 # Flip a "coin"
 
 ## heads = group A
@@ -135,18 +130,35 @@ class: middle, center
 ## tails = group B
 
 ---
-class: center, middle
+class: middle, center
 
 ![](slinky2.png)
 
-## check slinky, read the instructions, wait
+## [bit.ly/slinkyapp](http://bit.ly/slinkyapp)
+
+
+## click the link "Tapp this!", read the instructions, wait
 
 ---
-class: center, middle
+class: center, middle, inverse
 
 &lt;video height="400" controls&gt;
   &lt;source src="tappy.mp4" type="video/mp4"&gt;
 &lt;/video&gt;
+
+---
+class: center, middle
+
+## Select whether you are in group A or B and then send your tapp result through
+
+---
+
+&lt;iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQnyQFxXJKPECSUETE5w2zsSXDtnffapovB9Ru3XaW0h29fkOrGbZE0URZQNw4A9Ct30ZXfCiSWSexg/pubhtml?gid=748997953&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false" width="100%" height="100%" frameborder="0"&gt;&lt;/iframe&gt;
+
+---
+class: inverse, center
+
+&lt;img src="sheet.PNG" /&gt;
 
 ---
 .pull-left[
@@ -167,8 +179,38 @@ class: center, middle
 &lt;iframe src="https://script.google.com/macros/s/AKfycbxmF8JL-9R_viZolgV0e2TTUI2vsSER8Uwx7jyZHIt6eA3T5NWR/exec?page=code1" width="100%" height="100%" frameborder="0"&gt;&lt;/iframe&gt;
 
 ---
+class: inverse, center
+
+&lt;img src="bup_tapps.PNG" /&gt;
+
+---
 
 &lt;iframe src="https://script.google.com/macros/s/AKfycbxmF8JL-9R_viZolgV0e2TTUI2vsSER8Uwx7jyZHIt6eA3T5NWR/exec?page=code2" width="100%" height="100%" frameborder="0"&gt;&lt;/iframe&gt;
+
+---
+class: inverse, center
+
+&lt;img src="bup_tapps_group.PNG" /&gt;
+
+---
+class: middle, center
+
+# Flip a "coin" again
+
+## heads = group A
+
+## tails = group B
+
+## re-select your group and send through your result again
+
+---
+
+&lt;iframe src="https://script.google.com/macros/s/AKfycbxmF8JL-9R_viZolgV0e2TTUI2vsSER8Uwx7jyZHIt6eA3T5NWR/exec?page=code2" width="100%" height="100%" frameborder="0"&gt;&lt;/iframe&gt;
+
+---
+class: inverse, center
+
+&lt;img src="lineup.PNG" /&gt;
 
 ---
 class: middle, center, inverse
@@ -182,9 +224,18 @@ Hadley Wickham, Niladri Roy Chowdhury and Di Cook (2014). nullabor: Tools for Gr
 https://cran.r-project.org/web/packages/nullabor/vignettes/nullabor.html
 
 ---
+class: inverse, center
 
-VIT online with link via slinky
-(if working by Wed)
+&lt;img src="lineupanimated.gif" /&gt;
+
+---
+#Does caffeine have a stimulus effect?
+
+&lt;img src="caffeine.PNG" height=300 /&gt;
+
+.footnote[
+Modified from Watkins, A., Scheaffer, R. &amp; Cobb, R. (2010). *Statistics From Data to Decision*, (2nd ed.). Wiley. 
+]
 
 ---
 class: center, middle
@@ -202,15 +253,54 @@ class: center
 
 .footnote[
 See VIT (Visual Inference Tools) https://www.stat.auckland.ac.nz/~wild/VIT/downloads.html
+
+VIT is led by Chris Wild. Work on program infrastructure was begun by Garrett Grolemund (who also came up with the name "Visual Inference Tools"). 
+]
+
+---
+class: center
+
+# VIT + infer&lt;sup&gt;*&lt;/sup&gt; = awesome
+
+.pull-left[
+![](VIThead.png)
+]
+
+.pull-right[
+&lt;img src="infer_gnome.png" width=300 /&gt;
+]
+
+.footnote[
+Andrew Bray, Chester Ismay, Ben Baumer and Mine Cetinkaya-Rundel (2018). infer: Tidy Statistical Inference. R package version 0.2.0. https://CRAN.R-project.org/package=infer
+
+http://infer.netlify.com/index.html
 ]
 
 ---
 # What helps make large-scale interactives successful?
 
-- use of a link sharing system for quick transitions (e.g. slinky app)
-- using a modular approach rather than a "one stop shop" (e.g. data saved in Google sheet)
-- apps that accept public csv links as part of the URL (e.g. https://www.stat.auckland.ac.nz/~wild/VITonline/RandomisationVar/RVar.html?file=https://docs.google.com/spreadsheets/d/e/2PACX-1vQnyQFxXJKPECSUETE5w2zsSXDtnffapovB9Ru3XaW0h29fkOrGbZE0URZQNw4A9Ct30ZXfCiSWSexg/pub?gid=748997953&amp;single=true&amp;output=csv)
+--
+
+- use of a link sharing system for quick transitions e.g. slinky app
+
+--
+
+- using a modular approach rather than a "one stop shop" e.g. data saved in Google sheet
+
+--
+
+- apps that accept public csv links as part of the URL e.g. https://www.stat.auckland.ac.nz/~wild/VITonline/RandomisationVar/RVar.html?file=link_to_csv
+
+--
+
 - not hiding too many actions "behind the scenes"
+
+--
+
+- collect data on as many "variables" as you can even if you don't need it for the thing you designed the app for
+
+--
+
 - back up plans!
 
 ---
@@ -218,16 +308,52 @@ class: middle, center, inverse
 # How to get started?
 
 ---
+# Use google forms
 
-use google forms (quick demo of general knowledge quiz) 
+--
+
+.pull-left[
+![](general_knowledge.PNG)
+![](shuffleoption.PNG)
+]
+
+--
+
+.pull-right[
+![](vscrowd.PNG)
+]
 
 ---
+# Use shiny apps
 
-use shiny apps (quick demo of nick strayers shinysense package/wand magic)
+&lt;img src="alohomora.PNG" width="300" /&gt;
+
+.footnote[
+Image and app: https://jhubiostatistics.shinyapps.io/cast_spells/
+
+For more info about this app, see
+http://nickstrayer.me/dataDayTexas/ 
+
+Also check out Nick Strayer's shinysense package: https://github.com/nstrayer/shinysense
+]
 
 ---
+# Take something analog and make digital
 
-use no tech at all (cat drawing example)
+&lt;center&gt;
+&lt;img src="circles.gif" width="200" /&gt;
+&lt;/center&gt;
+
+.footnote[
+Interactive adapted from the circle sampling activity from Franklin, C., Kader, G., Mewborn, D., Moreno, J., Peck, R., Perry, M., &amp; Scheaffer, R. (2007). Guidelines for assessment and instruction in statistics education (GAISE) report. Alexandria: American Statistical Association, p. 53
+]
+
+---
+# Use no tech at all
+
+&lt;video height="400" controls&gt;
+  &lt;source src="sample.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
 
 ---
 # Emerging framework for large-scale interactives
@@ -249,76 +375,6 @@ class: left, middle, inverse
 &lt;i class="fa fa-twitter fa-2x"&gt;&lt;/i&gt; @annafergussonnz  
 Slides available at [bit.ly/LSinteractives](http://bit.ly/LSinteractives)  
 Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
-
----
-
----
-
-extra slides..
-
----
-class: inverse, middle, center
-
-# The only time I use chocolate
-
----
-
-&lt;iframe src="https://script.google.com/macros/s/AKfycbzgb7cPpLNe1RSLv1m1CLo-tQ27njM-1Iwrcn3oTWC6zqeFNvW4/exec" width="100%" height="100%" frameborder="0"&gt;&lt;/iframe&gt;
----
-class: middle, center
-
-# Discuss: Are you convinced this spinner is fair? Why or why not?
----
-class: middle, center
-
-![](coin.PNG)
-
----
-class: inverse, middle, center
-
-# The truth about cats (and maybe next time dogs)
-
----
-class: center, middle
-
-&lt;video height="400" controls&gt;
-  &lt;source src="stick.mp4" type="video/mp4"&gt;
-&lt;/video&gt;
-
----
-class: center, middle
-
-&lt;video height="400" controls&gt;
-  &lt;source src="draw.mp4" type="video/mp4"&gt;
-&lt;/video
----
-class: middle, center
-
-![](stopwatch.PNG)
-
----
-class: middle, center
-
-# How many seconds on average did students in our lecture take to draw their cat?
-
-# Did most students in our lecture draw a head only?
-
----
-class: center, middle
-
-&lt;video height="400" controls&gt;
-  &lt;source src="sample.mp4" type="video/mp4"&gt;
-&lt;/video&gt;
-
----
-class: middle, center
-
-![](presentation_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
----
-class: middle, center
-
-![](presentation_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
----
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
