@@ -1,0 +1,99 @@
+body { font-family: 'Roboto Slab', serif; }
+
+h1 {
+  font-family: 'Reenie Beanie';
+  font-weight: normal;
+}
+
+.navbar {
+  background-color:#A6C0C5;
+}
+
+blockquote{
+  border-left-color: #A6C0C5;
+  font-size: smaller;
+}
+
+.sidenote {
+  font-size: x-small;
+}
+
+.footnotes {
+  font-size: x-small;
+}
+
+.navbar-brand {
+  font-family: 'Reenie Beanie';
+  font-size: 150%;
+}
+
+h2, h3, .navbar-nav {
+  font-family: 'Roboto Slab';
+  font-weight: normal;
+}
+
+h4 {
+  font-family: 'Reenie Beanie';
+  font-size: x-large;
+  color:#A6C0C5;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline #A6C0C5 double;
+}
+
+a:hover, a:focus {
+  color: #000000;
+  background-color: #A6C0C5;
+  text-decoration: underline #A6C0C5 double;
+}
+
+.nav a{
+  font-weight:normal;
+}
+
+.nav a:hover{
+  color:black;
+}
+
+.navbar-nav li a {
+  font-family: 'Roboto Slab';
+  font-weight: normal;
+  color: black;
+}
+
+.title {
+  display:none;
+}
+
+#header {
+  margin-top: 30px;
+}
+
+.list-group-item .active, .list-group-item .active:hover, .list-group-item .active:focus {
+  background-color:#A6C0C5;
+  border-color:#A6C0C5;
+}
+
+div .sourceCode{
+  overflow-x: hidden;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.row {
+  background-color: #ffffff;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.footnotes {
+  border-top: 1px solid #A6C0C5;
+  padding-top: 20px;
+}

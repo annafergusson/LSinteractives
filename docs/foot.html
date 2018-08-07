@@ -1,0 +1,23 @@
+<div class='footnotes'>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</div>
+
+<script>
+  $(document).ready(function () {
+    
+ //960:569 ratio for Google slides
+ var screen_size = getScreenSize();
+ //document.getElementById("slides").width = screen_size.screenWidth*0.8;
+ //document.getElementById("slides").height = screen_size.screenWidth*0.8*569/960;
+ 
+});
+
+//collect the screen size of the device (from https://stackoverflow.com/questions/3437786/get-the-size-of-the-screen-current-web-page-and-browser-window)
+function getScreenSize() {
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    screenWidth = w.innerWidth || e.clientWidth || g.clientWidth,
+    screenHeight = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    return {screenWidth: screenWidth, screenHeight: screenHeight};
+} 
+</script>
