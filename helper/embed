@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base target="_blank">
+<style>
+body {
+    margin: 0;            
+}
+iframe {
+    display: block;       
+    border: none;         
+    height: 100vh;        
+    width: 100vw;
+}
+</style>
+</head>
+<body>
+<iframe frameborder = "none" src="https://script.google.com/macros/s/AKfycbzzk2xEpNIC31u7yPCz8zUf1r451cCfChgYD-EXvOMdL-L55Ig/exec"></iframe>
+</body>
+</html>
