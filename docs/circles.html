@@ -1,1 +1,52 @@
-html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base target="_blank">
+<style>
+body {
+    margin: 0;            /* Reset default margin */
+    background-color: #A6C0C5;
+}
+iframe {
+    display: block;       /* iframes are inline by default */
+    background-color: #A6C0C5;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+</style>
+<script>
+    // from https://css-tricks.com/prevent-white-flash-iframe/
+    // Prevent variables from being global      
+    (function () {
+
+      /*
+          1. Inject CSS which makes iframe invisible
+      */
+    
+    var div = document.createElement('div'),
+        ref = document.getElementsByTagName('base')[0] || 
+              document.getElementsByTagName('script')[0];
+
+    div.innerHTML = '&shy;<style> iframe { visibility: hidden; } </style>';
+
+    ref.parentNode.insertBefore(div, ref);
+        
+    /*
+        2. When window loads, remove that CSS, 
+           making iframe visible again
+    */
+    
+    window.onload = function() {
+        div.parentNode.removeChild(div);
+    }
+    
+})();
+</script>
+</head>
+<body>
+<iframe frameborder = "none" src="https://script.google.com/macros/s/AKfycbyZRGbG32kDEsJkJ_KTAchWjnDArudmS3-PH4AdJCgPGu0nahs/exec"></iframe>
+</body>
+</html>
