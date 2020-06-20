@@ -9,7 +9,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-    include:
+    includes:
       in_header: header.html
 ---
 ```{r setup, include=FALSE}
@@ -354,7 +354,4 @@ class: left, middle, inverse
 Slides available at [bit.ly/LSinteractives](http://bit.ly/LSinteractives)  
 Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
 
-```{js, echo=FALSE}
-  //https://desiree.rbind.io/post/2020/learnr-iframes/
-  iFrameResize({}, ".interactive");
-```
+
