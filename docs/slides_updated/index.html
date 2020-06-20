@@ -15,12 +15,6 @@
     
       gtag('config', 'UA-65065542-1');
     </script>
-    <script>
-      document.onload = function(){
-          //https://desiree.rbind.io/post/2020/learnr-iframes/
-        iFrameResize({}, ".interactive");
-      };
-    </script>
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
@@ -370,7 +364,9 @@ Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
-"countIncrementalSlides": false
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"afterInit": "code.js"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

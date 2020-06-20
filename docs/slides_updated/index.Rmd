@@ -9,8 +9,11 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      ratio: "16:9"
+      afterInit: "code.js"
     includes:
       in_header: header.html
+    
 ---
 ```{r setup, include=FALSE}
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
