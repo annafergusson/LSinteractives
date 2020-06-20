@@ -365,8 +365,7 @@ Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
 "highlightStyle": "github",
 "highlightLines": true,
 "countIncrementalSlides": false,
-"ratio": "16:9",
-"afterInit": "code.js"
+"ratio": "16:9"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
@@ -450,6 +449,12 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   }
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
+<script>
+  window.onload = function(){
+      //https://desiree.rbind.io/post/2020/learnr-iframes/
+    iFrameResize({}, ".interactive");
+  };
+</script>
 
 <script>
 slideshow._releaseMath = function(el) {

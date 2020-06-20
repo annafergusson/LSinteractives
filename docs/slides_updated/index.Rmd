@@ -10,9 +10,9 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
-      afterInit: "code.js"
     includes:
       in_header: header.html
+      after_body: footer.html
     
 ---
 ```{r setup, include=FALSE}
